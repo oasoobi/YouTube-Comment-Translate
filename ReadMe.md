@@ -25,9 +25,4 @@ When using a JavaScript injector as the installation method, manually edit
 
 A list of supported languages can be found here: <https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html>
 
-This is also the recommended method for firefox users. Use the following url
-pattern: `www\.youtube\.com`
-
-<img src="docs/injector.png">
-
 The icons used in the README are from the open-source [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) project
