@@ -19,6 +19,7 @@ Reload any open YouTube page after installation. A translate button will then ap
 ### Changing the language
 
 By default, the extension translates to english (en).
+You can change both the text and the target language in the settings.
 
 <img src="docs/setting.png">
 
