@@ -3,7 +3,6 @@
 
 * [Usage](#usage)
     * [Changing the language](#changing-the-language)
-* [Installation](#installation)
 * [Manual Install](#manual-install)
     * [Javascript injector](#javascript-injector)
     * [Chromium](#chromium)
