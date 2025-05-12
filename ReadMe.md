@@ -26,11 +26,6 @@ When using a JavaScript injector as the installation method, manually edit
 
 A list of supported languages can be found here: <https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html>
 
-## Installation
-
-When using chrome or any chromium based browser, it is recommended to install
-the extension directly from the chrome webstore.
-
 ## Manual Install
 
 ### Javascript injector
