@@ -25,13 +25,6 @@ When using a JavaScript injector as the installation method, manually edit
 
 A list of supported languages can be found here: <https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html>
 
-## Manual Install
-
-### Javascript injector
-
-Since this plugin uses a content-script, it should work on any browser that
-supports a [Javascript injector](https://github.com/Lor-Saba/Code-Injector).
-
 This is also the recommended method for firefox users. Use the following url
 pattern: `www\.youtube\.com`
 
