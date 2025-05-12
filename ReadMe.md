@@ -1,6 +1,8 @@
 <p align="center"><img src="docs/icon.png"></p>
 <h1 align="center">YouTube-Comment-Translate (Added Firefox support)</h1>
 
+This is a Firefox port of toluschr/YouTube-Comment-Translate.
+
 * [Usage](#usage)
     * [Changing the language](#changing-the-language)
 * [Manual Install](#manual-install)
