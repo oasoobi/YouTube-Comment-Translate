@@ -5,10 +5,6 @@ This is a Firefox port of toluschr/YouTube-Comment-Translate.
 
 * [Usage](#usage)
     * [Changing the language](#changing-the-language)
-* [Manual Install](#manual-install)
-    * [Javascript injector](#javascript-injector)
-    * [Chromium](#chromium)
-    * [Other](#other)
 
 ## Usage
 
