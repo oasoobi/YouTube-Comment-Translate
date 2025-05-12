@@ -43,29 +43,6 @@ pattern: `www\.youtube\.com`
 
 <img src="docs/injector.png">
 
-### Chromium
-
-Open the correct url for your browser:
-
-<table>
-	<tr>
-		<td align="right"><b>Browser</b></td>
-		<td align="center"><img src="https://raw.github.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/chromium-browser.svg" title="Chromium"></td>
-		<td align="center"><img src="https://raw.github.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/google-chrome.svg" title="Chrome"></td>
-		<td align="center"><img src="https://raw.github.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/opera.svg" title="Opera"></td>
-		<td align="center"><img src="https://raw.github.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/brave.svg" title="Brave"></td>
-		<td align="center"><img src="https://raw.github.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/vivaldi.svg" title="Brave"></td>
-	</tr>
-	<tr>
-		<td align="right"><b>Url</b></td>
-		<td align="center">chrome://extensions</td>
-		<td align="center">chrome://extensions</td>
-		<td align="center">opera:extensions</td>
-		<td align="center">chrome://extensions</td>
-		<td align="center">vivaldi://extensions</td>
-	</tr>
-</table>
-
 ---
 
 Enable `Developer mode` and click on `Load unpacked`.
