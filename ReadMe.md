@@ -1,12 +1,5 @@
 <p align="center"><img src="docs/icon.png"></p>
-<h1 align="center">YouTube-Comment-Translate</h1>
-
-<p align="center">
-	</br></br>
-		<a href="https://chrome.google.com/webstore/detail/youtube-comment-translate/alaejlmlpgcffloicejpccebbeeibemo">
-			<img src="docs/ChromeWebStore_BadgeWBorder_v2_206x58.png">
-	</br></br>
-</p>
+<h1 align="center">YouTube-Comment-Translate (Added Firefox support)</h1>
 
 * [Usage](#usage)
     * [Changing the language](#changing-the-language)
