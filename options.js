@@ -4,14 +4,14 @@ let target_language = document.getElementById("target_language");
 
 function save()
 {
-	chrome.storage.sync.set({translate_text: translate_text.value,
+	browser.storage.sync.set({translate_text: translate_text.value,
 	                              undo_text: undo_text.value,
 	                        target_language: target_language.value}, () => {});
 }
 
 function load()
 {
-	chrome.storage.sync.get({translate_text: "translate",
+	browser.storage.sync.get({translate_text: "translate",
 	                              undo_text: "undo",
 	                        target_language: navigator.language || navigator.userLanguage}, items => {
 		translate_text.value = items.translate_text;
