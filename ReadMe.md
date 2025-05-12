@@ -18,10 +18,10 @@ Reload any open YouTube page after installation. A translate button will then ap
 
 ### Changing the language
 
-By default, the extension translates to english (en). If the extension was
+By default, the extension translates to english (en).
 
-When using a JavaScript injector as the installation method, manually edit
-`inject.js` and change line 5 (`TARGET_LANGUAGE`) to the desired language.
+<img src="docs/setting.png">
+
 
 A list of supported languages can be found here: <https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html>
 
