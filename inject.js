@@ -1,4 +1,4 @@
-(function main () {
+(function main() {
 	function ReplaceNode(a, b) {
 		a.parentNode.appendChild(b);
 		a.parentNode.removeChild(a);
@@ -32,13 +32,18 @@
 	}
 
 	function TranslateButton(main) {
-		let tb = document.createElement("a");
+		const tb = document.createElement("a");
 		tb.id = "translate-button";
 		tb.style = "margin-left: 5px";
 		tb.classList = "yt-simple-endpoint style-scope yt-formatted-string";
 
 		tb._otext = main.querySelector(QS_CONTENT_TEXT);
-		tb._otext.addEventListener("DOMSubtreeModified", _ => ResetTranslateButton(tb));
+
+		const observer = new MutationObserver(() => ResetTranslateButton(tb));
+		observer.observe(tb._otext, {
+			childList: true,
+			subtree: true
+		});
 
 		tb._ntext = document.createElement("div");
 		tb._ntext.style.whiteSpace = "pre-wrap";
@@ -52,26 +57,25 @@
 	/* Query Selectors */
 	// From main
 	const QS_TRANSLATE_BUTTON = "#header>#header-author>yt-formatted-string>#translate-button, #header>#header-author>#published-time-text>#translate-button";
-	const QS_CONTENT_TEXT = "#expander>#content>#content-text";
+	const QS_CONTENT_TEXT = "#expander>#content>#content-text>span";
 	const QS_BUTTON_CONTAINER = "#header>#header-author>yt-formatted-string, #header>#header-author>#published-time-text";
 
 	/* User settings */
 	var TRANSLATE_TEXT = "translate", UNDO_TEXT = "undo", TARGET = navigator.language || navigator.userLanguage;
-
-	if (typeof(browser) !== "undefined" && typeof(browser.storage) != "undefined")
-		browser.storage.sync.get({translate_text: TRANSLATE_TEXT, undo_text: UNDO_TEXT, target_language: TARGET}, items => {
+	(async () => {
+		if (typeof (browser) !== "undefined" && typeof (browser.storage) != "undefined") {
+			const items = await browser.storage.sync.get({ translate_text: TRANSLATE_TEXT, undo_text: UNDO_TEXT, target_language: TARGET });
 			TRANSLATE_TEXT = items.translate_text;
 			UNDO_TEXT = items.undo_text;
 			TARGET = items.target_language;
-			inject();
-		});
-	else
+		}
 		inject();
+	})();
 
 	/* Functions */
 	// Inject as soon as the comment section was loaded
-	function inject () {
-		const observerConfig = {childList: true, subtree: true};
+	function inject() {
+		const observerConfig = { childList: true, subtree: true };
 		const commentObserver = new MutationObserver(e => {
 			for (let mut of e) {
 				/*if (mut.target.tagName.toLowerCase() == "ytd-comments") {

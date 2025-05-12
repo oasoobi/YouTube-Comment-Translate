@@ -1,38 +1,106 @@
 <html>
-	<head></head>
-
-	<body>
-		<div class="options">
-			<div>
-				<h2>Translate Text</h2>
-				<input id="translate_text"/><br>
-			</div>
-			<div>
-				<h2>Undo Text</h2>
-				<input id="undo_text"/><br>
-			</div>
-			<div>
-				<h2>Target Language (Country Code)</h2>
-				<input id="target_language"/><br>
-			</div>
-
-			<button id="save">save</button>
+<head></head>
+<body>
+	<div class="options">
+		<div>
+			<h2>Translate Text</h2>
+			<input id="translate_text" placeholder="Enter text to translate" />
+		</div>
+		<div>
+			<h2>Undo Text</h2>
+			<input id="undo_text" placeholder="Enter text to undo" />
+		</div>
+		<div>
+			<h2>Target Language (Country Code)</h2>
+			<input id="target_language" placeholder="en, ja" />
 		</div>
 
-		<script src="options.js"></script>
-<style>
-.options {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+		<button id="save">Save</button>
+	</div>
 
-.options > * {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0px 5px;
-}
-</style>
-	</body>
+	<script src="options.js" defer></script>
+	<style>
+		@font-face {
+			font-family: 'InterLatin';
+			src: url('./fonts/Inter-LatinOnly.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		body {
+			font-family: 'InterLatin', sans-serif;
+			background-color: #f4f4f9;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		.options {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: white;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.options h2 {
+			font-size: 1.2rem;
+			color: #444;
+			margin-bottom: 8px;
+		}
+
+		.options input {
+			padding: 10px;
+			width: 100%;
+			max-width: 400px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 1rem;
+			box-sizing: border-box;
+		}
+
+		.options input:focus {
+			border-color: #007BFF;
+			outline: none;
+		}
+
+		#save {
+			padding: 12px 20px;
+			font-size: 1.1rem;
+			background-color: #007BFF;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+			max-width: 200px;
+			transition: background-color 0.3s ease;
+		}
+
+		#save:hover {
+			background-color: #0056b3;
+		}
+
+		#save:active {
+			background-color: #004085;
+		}
+
+		@media (max-width: 600px) {
+			.options {
+				width: 90%;
+				padding: 15px;
+			}
+			.options input {
+				width: 100%;
+			}
+		}
+	</style>
+</body>
 </html>
